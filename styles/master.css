@@ -1,0 +1,93 @@
+@charset "UTF-8";
+/***********************************
+ * reset default value for element *
+ **********************************/
+html{color:#000;background:#FFF;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td { margin:0px;padding:0px;}
+/*table { border-collapse:collapse;border-spacing:0px;}*/
+fieldset,img { border:0px; }
+address,caption,cite,code,dfn,em,strong,th,var { font-style:normal;font-weight:normal;}
+li{list-style:none;}
+caption,th{text-align:left;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:bold;}
+h1{font-size:18px;}h2{font-size:16px;}h3{font-size:14px;}
+q:before,q:after{content:'';}
+abbr,acronym {border:0;font-variant:normal;}
+sup {vertical-align:text-top;}
+sub {vertical-align:text-bottom;}
+input,textarea,select{font-family:'lucida grande',tahoma,arial,'bitstream vera sans',helvetica,sans-serif;font-size:inherit;font-weight:inherit;}
+pre,code,kbd,samp,tt{font-family:monaco,'courier new','bitstream vera sans mono',monospace;}
+legend{color:#000;}
+/**
+ * Percents could work for IE, but for backCompat purposes, we are using keywords.
+ * x-small is for IE6/7 quirks mode.
+ */
+body{background:#fff;color:#000;font:12px/1.5 'lucida grande',tahoma,arial,'bitstream vera sans',helvetica,sans-serif;}
+table {font-size:inherit;font:100%;}
+/**
+ * Bump up IE to get to 13px equivalent
+ */
+pre,code,kbd,samp,tt{font-family:monospace;*font-size:108%;line-height:100%;}
+/***********************
+ *  use for clear element float
+ ***********************/
+/* slightly enhanced, universal clearfix hack */
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+
+/* customize */
+
+body {
+  background: #fcfcfc;
+  font-size: 13px;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+h1 {
+  font-size:2.5em;
+  margin-top:5px;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration:underline;
+}
+#page {
+  width:600px;
+  margin:0px auto;
+}
+#header {
+  padding: 5px 0px 10px 0px;
+  border-bottom:1px solid #999;
+  margin-bottom:10px;
+}
+#header .desc {
+  color:#888;
+}
+#header, #header a {
+  color: #000;
+}
+div.about {
+  margin-top:20px;
+}
+div.about img.avatar {
+  border:2px solid #CCC;
+  padding:1px;float:left;
+  margin-right:15px;
+}
+div.about p {
+  margin:10px 5px;
+}
